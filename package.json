@@ -1,0 +1,16 @@
+{
+  "name": "dc-bot-rewrite",
+  "version": "0.0.1",
+  "description": "A Self-developed Discord bot for private use.",
+  "main": "src/managerShard.js",
+  "scripts": {
+    "test": "node src/bot.js"
+  },
+  "author": "Knoxbergs",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.6.0",
+    "ffmpeg-static": "^5.1.0",
+    "fs": "^0.0.1-security"
+  }
+}
