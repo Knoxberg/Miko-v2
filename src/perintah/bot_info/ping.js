@@ -10,7 +10,7 @@ module.exports = {
             const message = await interaction.deferReply({
                 fetchReply: true
             });
-    
+       
             const pesanBaru = `Latency client bot: ${message.createdTimestamp - interaction.createdTimestamp}ms.\nLatency API: ${client.ws.ping}ms`;
             await interaction.editReply({
                 content: pesanBaru
