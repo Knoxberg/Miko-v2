@@ -18,5 +18,5 @@ managerShard.on("shardCreate", (shard) => {
     console.log(`Shard baru dibuat. ID: ${shard.id}`)
 });
 
-// summon shard nya mwahhahwhhawhah
+// Summon shard nya
 managerShard.spawn();
