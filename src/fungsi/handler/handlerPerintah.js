@@ -6,6 +6,7 @@ const { tokenBot, clientId } = require('../../../config.json');
 module.exports = (client) => {
     client.handlerPerintah = async() => {
         const folderPerintah = fs.readdirSync('./src/perintah');
+        console.log(`\n========COMMAND HANDLER========\n` +`---------Load Perintah---------`)
         for (const folder of folderPerintah) {
             const filePerintah = fs.readdirSync(`./src/perintah/${folder}`).filter(file => file.endsWith('.js'));
 
@@ -23,10 +24,11 @@ module.exports = (client) => {
         const rest = new REST({ version: '10' }).setToken(tokenBot);
         
         try {
-            console.log('Memuat perintah slash global...');
+            console.log('Memuat perintah slash...');
             await rest.put(Routes.applicationCommands(clientId), { 
                 body: client.commandArray
             });
+            console.log('Berhasil memuat perintah ke REST API Discord\n');
         } catch (error) {
             
         }

@@ -14,6 +14,7 @@ const managerShard = new ShardingManager('./src/bot.js', {
 });
 
 // Waktu shard dibuat, kirim notif id shard di terminal
+console.log(`============INISIASI============\n` + `------------Sharding------------`)
 managerShard.on("shardCreate", (shard) => {
     console.log(`Shard baru dibuat. ID: ${shard.id}`)
 });
