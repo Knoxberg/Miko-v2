@@ -31,7 +31,7 @@ try {
 
 	// Ketika client Discord siap, tulis ready di console
 	client.once('ready', () => {
-		console.log('Ready!');
+		console.log('Inisialisasi bot dimulai!');
 	});
 
 	// Call handler
