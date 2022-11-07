@@ -11,7 +11,8 @@ try {
 		GatewayIntentBits.GuildPresences,
 		GatewayIntentBits.GuildMessageReactions,
 		GatewayIntentBits.DirectMessages,
-		GatewayIntentBits.MessageContent
+		GatewayIntentBits.MessageContent,
+		GatewayIntentBits.GuildVoiceStates
 	);
 } catch (error) {
 	console.log(error);
@@ -30,10 +31,11 @@ try {
 			Partials.User,
 			Partials.GuildMember,
 			Partials.Reaction
-		]
+		],
 	});
 	client.commands = new Collection();
 	client.commandArray = [];
+
 
 	const folderFungsi = fs.readdirSync('./src/fungsi');
 	for (const folder of folderFungsi) {

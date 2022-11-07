@@ -33,7 +33,7 @@ module.exports = {
             // Ambil 1 gambar dari hasil pencarian
             const hasil_gambar = await google.scrape(keyword, 1);
             await interaction.editReply({
-                content: hasil_gambar[0].url
+                content: hasil_gambar[0].url,
             })
         } catch (error) {
             console.log(error);
