@@ -9,11 +9,7 @@ module.exports = {
      .addStringOption(option =>
 		option.setName('keyword')
 			.setDescription('Apa yang ingin kamu cari?')
-			.setRequired(true))
-     .addIntegerOption(option =>
-        option.setName('jumlah')
-            .setDescription('Berapa banyak gambar yang ingin kamu cari?')
-            .setRequired(false)),
+			.setRequired(true)),
     
     async execute(interaction, client) {
         await interaction.deferReply({
@@ -22,21 +18,12 @@ module.exports = {
         });
 
         try {
+            // Ambil keyword dari opsi
             const keyword = interaction.options.getString('keyword');
-            var jumlah = interaction.options.getInteger('jumlah');
-
-            if (jumlah != null) {
-                if (jumlah > 5) {
-                    await interaction.editReply({
-                        content: 'Miko tidak bisa mencari lebih dari 5 gambar sekaligus',
-                    });
-                    return;
-                }
-            } else {
-                jumlah = 1;
-            }
-
-            console.log(`${interaction.user.tag} mencari gambar dengan keyword "${keyword}", jumlah ${jumlah}`);
+            await interaction.editReply({
+                content: `Miko masih mencari gambar dengan keyword \`${keyword}\``,
+            })
+            console.log(`${interaction.user.tag} mencari gambar dengan keyword "${keyword}"`);
             // Cari gambar
             const google = new Scraper({
                 puppeteer : {
@@ -44,17 +31,10 @@ module.exports = {
                 }
             });
             // Ambil 1 gambar dari hasil pencarian
-            let hasil_gambar = await google.scrape(keyword, jumlah);
-
-            var bufferTier1 = [];
-            for (let i = 0; i < jumlah; i++) {
-                bufferTier1.push(hasil_gambar[i].url);
-            }
-
+            const hasil_gambar = await google.scrape(keyword, 1);
             await interaction.editReply({
-                content: bufferTier1.join('\n'),
+                content: hasil_gambar[0].url,
             })
-
         } catch (error) {
             console.log(error);
         }

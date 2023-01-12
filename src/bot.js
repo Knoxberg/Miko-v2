@@ -1,4 +1,4 @@
-const { Client, Collection, GatewayIntentBits, IntentsBitField } = require('discord.js');
+const { Client, Collection, GatewayIntentBits, IntentsBitField, Partials } = require('discord.js');
 const { tokenBot } = require('../config.json');
 const fs = require('fs');
 
@@ -6,7 +6,13 @@ const fs = require('fs');
 const daftarIntents = new IntentsBitField();
 try {
 	daftarIntents.add(
-		GatewayIntentBits.Guilds
+		GatewayIntentBits.Guilds,
+		GatewayIntentBits.GuildMessages,
+		GatewayIntentBits.GuildPresences,
+		GatewayIntentBits.GuildMessageReactions,
+		GatewayIntentBits.DirectMessages,
+		GatewayIntentBits.MessageContent,
+		GatewayIntentBits.GuildVoiceStates
 	);
 } catch (error) {
 	console.log(error);
@@ -17,9 +23,19 @@ try {
 	// Buat dan inisialisasi client Discord
 	// commands adalah sebuah Collection yang akan menyimpan semua perintah yang akan dijalankan
 	// commandArray adalah sebuah array yang akan menyimpan semua perintah yang akan dijalankan kemudian dikirim ke REST API Discord
-	const client = new Client({ intents: daftarIntents });
+	const client = new Client({ 
+		intents: daftarIntents,
+		partials: [
+			Partials.Channel,
+			Partials.Message,
+			Partials.User,
+			Partials.GuildMember,
+			Partials.Reaction
+		],
+	});
 	client.commands = new Collection();
 	client.commandArray = [];
+
 
 	const folderFungsi = fs.readdirSync('./src/fungsi');
 	for (const folder of folderFungsi) {
@@ -31,6 +47,7 @@ try {
 
 	// Ketika client Discord siap, tulis ready di console
 	client.once('ready', () => {
+		console.log(`=====MENYAMBUNG KE DISCORD=====\n` + `-----------Login Bot-----------`)
 		console.log('Inisialisasi bot dimulai!');
 	});
 
