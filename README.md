@@ -2,7 +2,7 @@
 
 This repository contains the code for Miko, a Discord bot.
 
-Please note that this bot is intended for personal use only and no support will be provided in any form. This includes but is not limited to technical support, usage guidance, and troubleshooting.
+Please note that this bot is intended for personal use only and is proprietary. No support will be provided in any form. This includes but is not limited to technical support, usage guidance, and troubleshooting.
 
 By using the code in this repository, you understand and agree to these terms.
 
