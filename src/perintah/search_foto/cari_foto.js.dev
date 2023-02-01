@@ -1,0 +1,13 @@
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+var Scraper = require('images-scraper');
+
+module.exports = {
+    data : new SlashCommandBuilder()
+        .setName('image')
+        .setDescription('Mencari gambar sesuai dengan keyword')
+        .setDMPermission(true) // Bisa dipakai melalui DM
+        .addStringOption(option =>
+            option.setName('keyword')
+                .setDescription('Apa yang ingin kamu cari?')
+                .setRequired(true)),
+                
