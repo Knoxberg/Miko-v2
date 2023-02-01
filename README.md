@@ -1,6 +1,6 @@
 ## Miko Discord Bot
 
-[EN]
+### [EN]
 
 This repository contains the code for Miko, a Discord bot.
 
@@ -10,8 +10,7 @@ No support will be provided in any form. This includes but is not limited to tec
 By using the code in this repository, you understand and agree to these terms.
 
 
-
-[ID]
+### [ID]
 
 Repositori ini berisi kode sumber dari Miko, yang merupakan sebuah bot Discord.
 
@@ -20,27 +19,25 @@ Tidak disediakan bantuan dalam bentuk apapun. Hal ini termasuk namun tidak dibat
 
 Dengan menggunakan kode dalam repositori ini, maka kamu dianggap telah mengerti dan menyetujui syarat dan ketentuan ini.
 
-### License
+## License
 
-[EN]
+### [EN]
 
 This project is licensed under the terms of the proprietary license with disclaimer of liability. A copy of this license can be found in the [LICENSE.md](LICENSE.md) file.
 
 
-
-[ID]
+### [ID]
 
 Proyek ini dilisensikan berdasarkan ketentuan lisensi kepemilikan dengan disclaimer tanggung jawab. Salinan lisensi ini dapat ditemukan di file [LICENSE.md](LICENSE.md).
 
-### Built With
+## Built With
 
-[EN]
+### [EN]
 
 This bot is built with the following technologies:
 
 
-
-[ID]
+### [ID]
 
 Bot ini dibuat dengan teknologi berikut:
 
