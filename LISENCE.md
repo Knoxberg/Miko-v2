@@ -2,6 +2,7 @@ Proprietary License with Disclaimer of Liability
 
 Copyright (c) 2023 Knoxberg, All Rights Reserved.
 
+
 The code in this project, known as the Miko project, is a Discord Bot and is proprietary and may not be used, copied, modified, or distributed by anyone except Knoxberg, except as specifically allowed by this license.
 
 Discord refers to a proprietary, cross-platform video, voice and text chat app designed for gamers.
