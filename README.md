@@ -14,7 +14,7 @@ By using the code in this repository, you understand and agree to these terms.
 Repositori ini berisi kode sumber dari Miko, yang merupakan sebuah bot Discord.
 
 Perlu diperhatikan bahwa **bot ini ditujukan untuk penggunaan pribadi dan merupakan hak milik intelektual pribadi bersifat tertutup.**
-Tidak disediakan bantuan dalam bentuk apapun. Hal ini termasuk namun tidak dibatasi pada bantuan teknis, panduan penggunaan, serta toubleshooting.
+Tidak disediakan dukungan dalam bentuk apapun. Hal ini termasuk namun tidak dibatasi pada bantuan teknis, panduan penggunaan, serta toubleshooting.
 
 Dengan menggunakan kode dalam repositori ini, maka kamu dianggap telah mengerti dan menyetujui syarat dan ketentuan ini.
 
