@@ -53,16 +53,19 @@ module.exports = {
                         // Masukkan hasil pencarian ke array
                         hasil_Gambar.push(buffer_Gambar[i].url);
                     }
+
+                    // Kirim hasil pencarian
+                    await interaction_Input.editReply({
+                        content: hasil_Gambar.join('\n'),
+                    });
+
                 }
                 // Jika jumlah gambar hanya 1, maka langsung ambil url dari hasil pencarian
                 else {
-                    var hasil_Gambar = buffer_Gambar;
+                    await interaction_Input.editReply({
+                        content: buffer_Gambar[0].url,
+                    })
                 }
-                
-                // Kirim hasil pencarian
-                await interaction_Input.editReply({
-                    content: hasil_Gambar.join('\n'),
-                });
                 
             } catch (error) {
                 console.log(error);
