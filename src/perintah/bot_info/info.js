@@ -45,7 +45,7 @@ module.exports = {
 					
 				});
 			} catch (error) {
-				console.log(error);
+				console.error(error);
 			}
 		} 
 		// Cek apakah subcommand yang dipilih adalah jumlah_server
@@ -73,7 +73,7 @@ module.exports = {
 						});
 					})
 			} catch (error) {
-				console.log(error);
+				console.error(error);
 			}
 		}
 	}

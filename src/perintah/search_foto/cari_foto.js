@@ -68,7 +68,7 @@ module.exports = {
                 }
                 
             } catch (error) {
-                console.log(error);
+                console.error(error);
             }
         }
 
@@ -106,7 +106,7 @@ module.exports = {
                 pencariGambar(interaction, interaction.options.getString('keyword'), berapaJumlahGambar);
             }
         } catch (error) {
-            console.log(error);
+            console.error(error);
         }
     }
 }

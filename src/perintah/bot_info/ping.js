@@ -9,6 +9,7 @@ module.exports = {
     async execute(interaction, client) {
         try {
             const message = await interaction.deferReply({
+                content: 'Ping! Miko, kamu disitu?',
                 fetchReply: true,
                 ephemeral: false
             });
@@ -19,8 +20,8 @@ module.exports = {
                 .setTitle('Latency Bot')
                 .setDescription('Semakin rendah nilai latency, semakin baik.')
                 .addFields(
-                    { name: 'Latency Client -> Bot:', value: `\`${message.createdTimestamp - interaction.createdTimestamp}\` ms`, inline: true },
-                    { name: 'Latency REST API:', value: `\`${client.ws.ping}\` ms`, inline: true },
+                    { name: 'Latency Kamu -> Bot:', value: `\`${message.createdTimestamp - interaction.createdTimestamp}\` ms`, inline: true },
+                    { name: 'Latency Bot -> API:', value: `\`${client.ws.ping}\` ms`, inline: true },
                     { name: 'Latency Total:', value: `\`${message.createdTimestamp - interaction.createdTimestamp + client.ws.ping}\` ms`, inline: false }
                 );
 
@@ -29,7 +30,7 @@ module.exports = {
             });
 
         } catch (error) {
-            console.log(error);
+            console.error(error);
         }
     }
 }

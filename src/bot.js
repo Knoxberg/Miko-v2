@@ -15,7 +15,7 @@ try {
 		GatewayIntentBits.GuildVoiceStates
 	);
 } catch (error) {
-	console.log(error);
+	console.error(error);
 	console.log('Tidak bisa menambahkan intent ke bitfield intent! Cek Privilege BOT di Discord Developer Portal!');
 }
 
@@ -59,5 +59,5 @@ try {
 	client.login(tokenBot);
 
 } catch (error) {
-	console.log(error);
+	console.error(error);
 }
