@@ -1,5 +1,6 @@
 const { Client, Collection, GatewayIntentBits, IntentsBitField, Partials } = require('discord.js');
-const { tokenBot } = require('../config.json');
+require('dotenv').config();
+const { tokenBot } = process.env.TOKEN_BOT;
 const fs = require('fs');
 
 // Inisiasi bitfield intent

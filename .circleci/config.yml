@@ -4,6 +4,7 @@ jobs:
     working_directory: ../src
     docker:
       - image: node:19.2.0
+    resource_class: small
     steps:
       - checkout
 

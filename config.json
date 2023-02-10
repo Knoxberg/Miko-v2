@@ -1,7 +1,8 @@
 {
-    "tokenBot": "",
-    "tokenBotOri": "",
-    "clientId": "",
+    "tokenBot": "OTEyNjA2MTMzODM4MDI4ODIw.GiCnPN.R5EUSIAcpQon38LJpNKAa8saV_fz9ilMSMg_pY",
+    "tokenBotOri": "OTA5MzA4NDgyNTAxNjE5NzQy.GsSSis.ufmiMZcxK0aHKROwLyLNnwdGC7eK8UlJPsmXK4",
+    "clientId": "912606133838028820",
     "jumlahShard": "auto",
+    "prefiks": "?",
     "apaDev": true
 }
