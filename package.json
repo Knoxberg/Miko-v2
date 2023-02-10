@@ -4,7 +4,7 @@
   "description": "A Self-developed Discord bot for private use.",
   "main": "src/managerShard.js",
   "scripts": {
-    "test": "node src/bot.js"
+    "start": "node src/bot.js"
   },
   "author": "Knoxbergs",
   "license": "ISC",

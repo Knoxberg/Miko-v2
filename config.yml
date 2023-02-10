@@ -1,0 +1,35 @@
+version: 1.0
+jobs:
+  start_bot:
+    working_directory: ~/src
+    docker:
+      - image: node:19.2.0
+    steps:
+      - checkout
+
+      # Install dependency-dependency yang dibutuhkan
+      - run:
+          name: Install semua dependency
+          command: npm ci
+      
+      # Jalanin bot nya
+      - run:
+          name: Mulai botnya
+          command: npm start
+
+      # Cek apakah bot bisa dijalanin
+      - run:
+        name: Cek bot saat awal run
+        command: sleep 1 && ps aux | grep "node bot.js" | grep -v "grep" || echo "File bot.js gagal start"
+
+      # Cek apakah bot sudah berjalan
+      - run: 
+        name: Cek apakah bot berhasil login dan status ready
+        command: sleep 10 && grep "Bot berhasil login" || echo "Bot gagal login"
+
+workflows:
+  version: 1.0
+
+  mulai_dan_tes:
+    jobs:
+      - start_bot

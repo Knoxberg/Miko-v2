@@ -52,12 +52,13 @@ module.exports = {
                     for (let i = 0; i < jumlah_Gambar_Input; i++) {
                         // Masukkan hasil pencarian ke array
                         hasil_Gambar.push(buffer_Gambar[i].url);
+                        await interaction.reply({
+                            fetchReply: true,
+                            ephemeral: true,
+                            content: buffer_Gambar[i].url
+                        })
                     }
 
-                    // Kirim hasil pencarian
-                    await interaction_Input.editReply({
-                        content: hasil_Gambar.join('\n'),
-                    });
 
                 }
                 // Jika jumlah gambar hanya 1, maka langsung ambil url dari hasil pencarian
