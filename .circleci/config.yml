@@ -10,7 +10,7 @@ jobs:
       # Install dependency-dependency yang dibutuhkan
       - run:
           name: Install semua dependency
-          command: npm ci
+          command: npm install
       
       # Jalanin bot nya
       - run:

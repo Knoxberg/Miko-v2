@@ -7,7 +7,7 @@
     "start": "node src/bot.js"
   },
   "author": "Knoxbergs",
-  "license": "ISC",
+  "license": "Proprietary, please refer to LICENSE.md file",
   "dependencies": {
     "@discordjs/opus": "^0.8.0",
     "@discordjs/voice": "^0.13.0",
