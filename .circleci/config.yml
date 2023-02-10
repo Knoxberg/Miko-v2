@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   start_bot:
-    working_directory: /src
+    working_directory: ../src
     docker:
       - image: node:19.2.0
     steps:
