@@ -20,13 +20,13 @@ jobs:
       
       # Cek apakah bot bisa dijalanin
       - run:
-        name: Cek bot saat awal run
-        command: sleep 1 && ps aux | grep "node bot.js" | grep -v "grep" || echo "File bot.js gagal start"
+          name: Cek bot saat awal run
+          command: sleep 1 && ps aux | grep "node bot.js" | grep -v "grep" || echo "File bot.js gagal start"
 
       # Cek apakah bot sudah berjalan
       - run: 
-        name: Cek apakah bot berhasil login dan status ready
-        command: sleep 10 && grep "Bot berhasil login" || echo "Bot gagal login"
+          name: Cek apakah bot berhasil login dan status ready
+          command: sleep 10 && grep "Bot berhasil login" || echo "Bot gagal login"
 
 workflows:
   version: 2
