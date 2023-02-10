@@ -1,6 +1,5 @@
 const { ShardingManager } = require("discord.js");
 require('dotenv').config();
-//const { jumlahShard, tokenBot } = require("../config.json");
 const { jumlahShard } = require("../config.json");
 const tokenBot = process.env.TOKEN_BOT;
 console.log(tokenBot);
