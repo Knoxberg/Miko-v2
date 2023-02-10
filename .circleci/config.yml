@@ -1,4 +1,4 @@
-version: 1.0
+version: 1
 jobs:
   start_bot:
     working_directory: ~/src
@@ -28,7 +28,7 @@ jobs:
         command: sleep 10 && grep "Bot berhasil login" || echo "Bot gagal login"
 
 workflows:
-  version: 1.0
+  version: 1
 
   mulai_dan_tes:
     jobs:
