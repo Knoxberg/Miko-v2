@@ -13,7 +13,7 @@ module.exports = {
                 fetchReply: true,
                 ephemeral: false
             });
-       
+
             const isiEmbed = new EmbedBuilder()
                 //.setColor(0x0099FF)
                 .setColor('#FFC0CB')

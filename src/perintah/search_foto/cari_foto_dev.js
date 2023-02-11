@@ -74,7 +74,7 @@ module.exports = {
         }
 
         try {
-           var berapaJumlahGambar = 1;
+            var berapaJumlahGambar = 1;
 
             // Jika user tidak memasukkan nilai jumlah gambar, maka menggunkan default jumlah gambar
             if (interaction.options.getInteger('jumlah') == null || interaction.options.getInteger('jumlah') == undefined || interaction.options.getInteger('jumlah') == 0) {

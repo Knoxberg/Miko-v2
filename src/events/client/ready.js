@@ -8,8 +8,8 @@ module.exports = {
         try {
             client.user.setPresence({
                 activities: [{ 
-                  name: `my friend's love life`,
-                  type: ActivityType.Watching
+                    name: `my friend's love life`,
+                    type: ActivityType.Watching
                 }],
                 status: 'online',
             })
