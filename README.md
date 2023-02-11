@@ -1,5 +1,7 @@
 ## Miko Discord Bot
 
+### Build & Run Status: [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Knoxberg/Miko-v2/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Knoxberg/Miko-v2/tree/main)
+
 ### [EN]
 
 This repository contains the code for Miko, a Discord bot.
