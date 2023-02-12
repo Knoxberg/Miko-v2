@@ -52,6 +52,8 @@ module.exports = {
                     for (let i = 0; i < jumlah_Gambar_Input; i++) {
                         // Masukkan hasil pencarian ke array
                         hasil_Gambar.push(buffer_Gambar[i].url);
+                        console.log("🚀 ~ file: cari_foto.js:55 ~ pencariGambar ~ buffer_Gambar", buffer_Gambar)
+                        console.log("🚀 ~ file: cari_foto.js:55 ~ pencariGambar ~ hasil_Gambar", hasil_Gambar)
                     }
 
                     // Kirim hasil pencarian
@@ -65,6 +67,7 @@ module.exports = {
                     await interaction_Input.editReply({
                         content: buffer_Gambar[0].url,
                     })
+                        console.log("🚀 ~ file: cari_foto.js:70 ~ pencariGambar ~ buffer_Gambar", buffer_Gambar)
                 }
                 
             } catch (error) {
