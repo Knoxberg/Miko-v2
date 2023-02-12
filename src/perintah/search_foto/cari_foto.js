@@ -43,6 +43,7 @@ module.exports = {
                 });
                 // Ambil 1 gambar dari hasil pencarian
                 const buffer_Gambar = await google.scrape(keyword, jumlah_Gambar_Input);
+                console.log("🚀 ~ file: cari_foto.js:46 ~ pencariGambar ~ buffer_Gambar", buffer_Gambar)
 
                 // Jika jumlah gambar lebih dari 1, maka buat array dari hasil pencarian
                 if (jumlah_Gambar_Input != 1 ){
