@@ -1,7 +1,9 @@
 const fs = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v10');
-const { tokenBot, clientId } = require('../../../config.json');
+require('dotenv').config();
+const tokenBot = process.env.TOKEN_BOT;
+const clientId = process.env.APP_ID;
 
 module.exports = (client) => {
     client.handlerPerintah = async() => {

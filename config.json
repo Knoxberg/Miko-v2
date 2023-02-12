@@ -1,9 +1,4 @@
 {
-    "client_secret": "",
-    "tokenBot": "",
-    "tokenBotOri": "",
-    "clientId": "",
     "jumlahShard": "auto",
-    "prefiks": "?",
     "apaDev": true
 }
