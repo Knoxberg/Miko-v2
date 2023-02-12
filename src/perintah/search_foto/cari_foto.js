@@ -43,7 +43,6 @@ module.exports = {
                 });
                 // Ambil 1 gambar dari hasil pencarian
                 const buffer_Gambar = await google.scrape(keyword, jumlah_Gambar_Input);
-                console.log("🚀 ~ file: cari_foto.js:46 ~ pencariGambar ~ buffer_Gambar", buffer_Gambar)
 
                 // Jika jumlah gambar lebih dari 1, maka buat array dari hasil pencarian
                 if (jumlah_Gambar_Input != 1 ){
@@ -53,8 +52,6 @@ module.exports = {
                     for (let i = 0; i < jumlah_Gambar_Input; i++) {
                         // Masukkan hasil pencarian ke array
                         hasil_Gambar.push(buffer_Gambar[i].url);
-                        console.log("🚀 ~ file: cari_foto.js:55 ~ pencariGambar ~ buffer_Gambar", buffer_Gambar)
-                        console.log("🚀 ~ file: cari_foto.js:55 ~ pencariGambar ~ hasil_Gambar", hasil_Gambar)
                     }
 
                     // Kirim hasil pencarian
@@ -68,7 +65,6 @@ module.exports = {
                     await interaction_Input.editReply({
                         content: buffer_Gambar[0].url,
                     })
-                        console.log("🚀 ~ file: cari_foto.js:70 ~ pencariGambar ~ buffer_Gambar", buffer_Gambar)
                 }
                 
             } catch (error) {
