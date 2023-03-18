@@ -16,7 +16,7 @@
     "distube": "^4.0.3",
     "dotenv": "^16.0.3",
     "ffmpeg-static": "^5.1.0",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "images-scraper": "^6.4.1",
     "puppeteer": "^19.0.0",
     "slash-create": "^5.10.0",
