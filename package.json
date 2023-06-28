@@ -10,7 +10,7 @@
   "license": "Proprietary, please refer to LICENSE.md file",
   "dependencies": {
     "@discordjs/opus": "^0.8.0",
-    "@discordjs/voice": "^0.13.0",
+    "@discordjs/voice": "^0.14.0",
     "discord-player": "^5.3.2",
     "discord.js": "^14.6.0",
     "distube": "^4.0.3",
