@@ -13,7 +13,7 @@
     "@discordjs/voice": "^0.14.0",
     "discord-player": "^5.3.2",
     "discord.js": "^14.6.0",
-    "distube": "^4.0.3",
+    "distube": "^5.0.1",
     "dotenv": "^16.0.3",
     "ffmpeg-static": "^5.1.0",
     "fs": "^0.0.1-security",
